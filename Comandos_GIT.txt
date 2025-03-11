@@ -22,6 +22,12 @@
         git push -u origin <nombre-de-la-rama>
             solo se hace la primera vez por rama, luego simplemente 
             git push
-    
+            
+# Crear nueva Rama
+    1. Crear una nueva rama
+        git branch <nombre de la rama> --> solo crea la rama
+    2. crear y cambiar de rama
+        git switch -c <nombre-de-la-rama>
+
 # Para ver el log de manera organizada
     git log --pretty=format:'%h | %an | %ad | %s' --date=short | column -t -s '|'
