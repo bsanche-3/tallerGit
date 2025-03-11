@@ -22,6 +22,7 @@
         git push -u origin <nombre-de-la-rama>
             solo se hace la primera vez por rama, luego simplemente 
             git push
+            
 # Crear nueva Rama
     1. Crear una nueva rama
         git branch <nombre de la rama> --> solo crea la rama
