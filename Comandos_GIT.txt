@@ -1,4 +1,27 @@
-comandos Git
+# comandos Git
 
-Para ver el log de manera organizada
-git log --pretty=format:'%h | %an | %ad | %s' --date=short | column -t -s '|'
+# para conectar Git con GitHub
+    1. Crear repositorio en GitHub
+    2. conectar repositorio local con el GitHub Remoto
+        git remote add origin <URL DEL REPOSITORIO GITHUB>
+    3. Verificar Remotos
+        git remote -v
+    4. Sincronizar Local con el Remoto
+        git pull origin main --rebase
+
+# para subir cambios
+    1. crear o modificar archivos a utilizar
+    2. Verificar que archivos an cambiado
+        git status
+    3. adicionar los archivos a el espacio de staging
+        git add <Nombre archivo> --> si es un archivo especifico
+        git add . --> si es para todos los modificados
+    4. subir cambios al repositorio local
+        git commit -m "Mensaje y descripcion del cambio"
+    5. subir cambios al repositorio remoto GitHub
+        git push -u origin <nombre-de-la-rama>
+            solo se hace la primera vez por rama, luego simplemente 
+            git push
+    
+# Para ver el log de manera organizada
+    git log --pretty=format:'%h | %an | %ad | %s' --date=short | column -t -s '|'
