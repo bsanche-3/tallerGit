@@ -1,0 +1,4 @@
+comandos Git
+
+Para ver el log de manera organizada
+git log --pretty=format:'%h | %an | %ad | %s' --date=short | column -t -s '|'
